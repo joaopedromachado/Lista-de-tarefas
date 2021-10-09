@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link href="./CSS/style.css" rel="stylesheet">
+    <link href="./assets/icon.png" rel="icon_path">
+</head>
+<body>
+
+  <div class="container">
+    <div>
+      <div class="header">
+        <h1>Lista de Tarefas</h1>
+      </div>
+
+      <div class="div-input-content">
+          <input class="input-text-style" type="text" name="texto" placeholder="Digite sua tarefa aqui..." id="meuInput">
+          <input class="input-style-one" type="button" onclick="addBtn()" value="Adicionar">
+          <input class="input-style-two" type="button" onclick="clearBtn()" value="Limpar tudo">
+      </div>
+    </div>
+
+      <hr>
+
+      <div class="div-lista">
+        <ul id="minhaUL">
+      
+        </ul>
+      </div>
+  </div>
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
