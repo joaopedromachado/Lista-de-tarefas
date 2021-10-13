@@ -30,7 +30,7 @@ function addBtn() {
 
 //Crio um botão indexado dentro da tag <li>
     let criarSpan = document.createElement("SPAN");
-    let textoSpan = document.createTextNode("Excluir");
+    let textoSpan = document.createTextNode("x");
     criarSpan.setAttribute("id", "spanBtn")
     criarSpan.appendChild(textoSpan);
     lista.appendChild(criarSpan);
@@ -39,7 +39,6 @@ function addBtn() {
 
 
         guardarLista();
-
 }
 
 function apagarTarefa(e) {
@@ -62,3 +61,10 @@ function guardarLista() {
 
     apagarTarefa
 }
+
+minhaUL.addEventListener("click", function checkedBtn(elemento) {
+    if(elemento.target.tagName === "LI"){
+        elemento.target.classList.toggle("checked");
+    }
+    guardarLista()
+});
