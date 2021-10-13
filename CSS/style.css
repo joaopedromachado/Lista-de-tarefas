@@ -51,13 +51,14 @@ li {
     box-sizing: border-box;
     border-radius: 10px;
     padding: 5px;
-    width: 800px;
+    width: 80%;
     
 /* Container centralizado na tela */
     position: absolute;
     left: 50%;
     top: 50px;
     transform: translateX(-50%);
+    
 }
 .header{
     text-align: center;

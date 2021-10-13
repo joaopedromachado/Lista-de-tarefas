@@ -35,14 +35,15 @@ function addBtn() {
     criarSpan.appendChild(textoSpan);
     lista.appendChild(criarSpan);
 
-    criarSpan.setAttribute("onclick", "apagarTarefa()")
-    
+    criarSpan.setAttribute("onclick", "apagarTarefa(this)")
 
-        guardarLista()
+
+        guardarLista();
+
 }
 
-function apagarTarefa() {
-    let criarSpan = document.getElementById("spanBtn").parentElement
+function apagarTarefa(e) {
+    let criarSpan = e.parentElement
     let receber = criarSpan.parentElement
     receber.removeChild(criarSpan)
     guardarLista()
